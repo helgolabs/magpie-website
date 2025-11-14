@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { track } from "@vercel/analytics";
 import Modal from "./Modal";
 import IOSModal from "./IOSModal";
 import DesktopModal from "./DesktopModal";
@@ -33,10 +34,17 @@ export default function DownloadButton({
   }, []);
 
   const handleClick = () => {
+    // Track download button click
+    track("download_button_click", { platform });
+
     if (platform === "android") {
+      // Track Play Store redirect
+      track("play_store_redirect");
       // Redirect to Play Store
       window.location.href = playStoreUrl;
     } else if (platform === "ios" || platform === "desktop") {
+      // Track modal open
+      track("download_modal_open", { platform });
       // Show modal
       setIsModalOpen(true);
     }

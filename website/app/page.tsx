@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { track } from "@vercel/analytics";
 
 export default function Home() {
   return (
@@ -69,6 +72,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="transition-all hover:scale-105"
+            onClick={() => track("google_play_badge_click")}
           >
             <Image
               src="/GetItOnGooglePlay_Badge_Web_color_English.svg"
@@ -83,6 +87,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="transition-all hover:scale-105"
+            onClick={() => track("app_store_badge_click")}
           >
             <Image
               src="/Pre-order_on_the_App_Store_Badge_US-UK_RGB_blk_121217.svg"

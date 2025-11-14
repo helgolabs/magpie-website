@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import TopBar from "./components/TopBar";
+import { Analytics } from "@vercel/analytics/react";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <TopBar />
         {children}
+        <Analytics />
       </body>
     </html>
   );

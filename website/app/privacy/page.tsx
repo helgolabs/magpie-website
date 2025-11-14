@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Magpie Money",
+  title: "Privacy Policy - magpie.money",
   description: "Privacy Policy for Magpie - Learn how we collect, use, and protect your personal information.",
 };
 

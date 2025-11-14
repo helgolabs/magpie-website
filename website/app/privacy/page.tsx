@@ -335,7 +335,85 @@ export default function PrivacyPage() {
 
         <section className="flex flex-col gap-4">
           <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
-            8. International Data Transfers
+            8. Account and Data Deletion
+          </h2>
+
+          <div>
+            <h3 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+              8.1 Account Deletion Request
+            </h3>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              You can request deletion of your Magpie account at any time. To request account deletion:
+            </p>
+            <ul className="list-disc list-inside ml-4 text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              <li>Visit: <a href="https://magpie.money/delete-account" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">magpie.money/delete-account</a></li>
+              <li>Or email us at: <a href="mailto:support@magpie.money?subject=Account%20Deletion%20Request" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">support@magpie.money</a> with the subject "Account Deletion Request"</li>
+            </ul>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              We will process your request within 30 days.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+              8.2 Data Deletion Request
+            </h3>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              You can request deletion of specific data associated with your account. To request data deletion:
+            </p>
+            <ul className="list-disc list-inside ml-4 text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              <li>Visit: <a href="https://magpie.money/delete-data" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">magpie.money/delete-data</a></li>
+              <li>Or email us at: <a href="mailto:support@magpie.money?subject=Data%20Deletion%20Request" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">support@magpie.money</a> with the subject "Data Deletion Request"</li>
+            </ul>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              Please specify which data you would like deleted in your request.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+              8.3 Limitations on Deletion
+            </h3>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              <strong>Important:</strong> We may not be able to completely delete your account or data if you are involved in unsettled group expenses. This is because:
+            </p>
+            <ul className="list-disc list-inside ml-4 text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              <li>Other users in your groups depend on accurate expense records</li>
+              <li>Deleting your data would corrupt the expense calculations for other group members</li>
+              <li>We need to maintain transaction integrity for financial accuracy</li>
+            </ul>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              <strong>If you have unsettled balances:</strong>
+            </p>
+            <ul className="list-disc list-inside ml-4 text-base leading-7 text-zinc-600 dark:text-zinc-400 mb-2">
+              <li>We will anonymize your personal information (name, email, profile picture)</li>
+              <li>We will remove transaction IDs and account identifiers</li>
+              <li>We will retain only the minimum data necessary to maintain accurate group expense records (payment amounts, dates, and group involvement)</li>
+            </ul>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <strong>If all your groups are settled:</strong> We can perform a complete account deletion, removing all your personal and transactional data from our systems.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+              8.4 Deletion Timeline
+            </h3>
+            <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              Once we receive your deletion request, we will:
+            </p>
+            <ul className="list-disc list-inside ml-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <li>Acknowledge your request within 5 business days</li>
+              <li>Complete the deletion process within 30 days</li>
+              <li>Notify you when the deletion is complete</li>
+              <li>Provide details about any data that could not be fully deleted due to unsettled balances</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-4">
+          <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            9. International Data Transfers
           </h2>
           <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
             Your data may be transferred to and processed in the Netherlands where our servers are located. We ensure appropriate safeguards are in place for such transfers.
@@ -344,7 +422,7 @@ export default function PrivacyPage() {
 
         <section className="flex flex-col gap-4">
           <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
-            9. Changes to This Policy
+            10. Changes to This Policy
           </h2>
           <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
             We may update this Privacy Policy from time to time. We will notify you of significant changes through the App or via email. Your continued use of the App after changes constitutes acceptance of the new policy.
@@ -353,7 +431,7 @@ export default function PrivacyPage() {
 
         <section className="flex flex-col gap-4">
           <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
-            10. Children's Privacy
+            11. Children's Privacy
           </h2>
           <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
             Our App is not intended for users under 13 years of age. We do not knowingly collect personal information from children under 13.
@@ -362,7 +440,7 @@ export default function PrivacyPage() {
 
         <section className="flex flex-col gap-4">
           <h2 className="text-2xl font-semibold text-black dark:text-zinc-50">
-            11. Contact Us
+            12. Contact Us
           </h2>
           <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
             If you have questions about this Privacy Policy or our data practices, please contact us:

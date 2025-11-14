@@ -115,7 +115,7 @@ export default function Home() {
               All your spending. Every card. Every bank account.
             </h2>
             <p className="text-lg leading-relaxed text-white/90 sm:text-xl">
-              Connect your credit cards and bank accounts from nearly all of the UK banks, building societies and credit cards so that magpie can track your spending automatically
+              Connect all your credit cards and bank accounts so that magpie gather up all your transactions and you can split the bill in just 3 clicks.
             </p>
           </div>
         </div>
@@ -124,10 +124,10 @@ export default function Home() {
         <div className="flex w-full max-w-6xl flex-col-reverse items-center gap-12 px-4 md:flex-row md:gap-48">
           <div className="w-full space-y-6 md:w-1/2">
             <h2 className="text-center text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
-              All your spending. Every card. Every bank account.
+              Road trips. Roommates. Romantics. We've got you covered.
             </h2>
             <p className="text-lg leading-relaxed text-white/90 sm:text-xl">
-              Connect your credit cards and bank accounts from nearly all of the UK banks, building societies and credit cards so that magpie can track your spending automatically
+              Magpie.money works perfectly for whoever you're with, even if not everyone has the app.
             </p>
           </div>
           <div className="w-full md:w-1/2">
@@ -158,10 +158,10 @@ export default function Home() {
           </div>
           <div className="w-full space-y-6 md:w-1/2">
             <h2 className="text-center text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
-              All your spending. Every card. Every bank account.
+              Works offline.
             </h2>
             <p className="text-lg leading-relaxed text-white/90 sm:text-xl">
-              Connect your credit cards and bank accounts from nearly all of the UK banks, building societies and credit cards so that magpie can track your spending automatically
+              So even if you're in the middle of nowhere just keep adding your payments and know that magpie.money will sort it when you're back online.
             </p>
           </div>
         </div>
@@ -170,10 +170,10 @@ export default function Home() {
         <div className="flex w-full max-w-6xl flex-col-reverse items-center gap-12 px-4 md:flex-row md:gap-48">
           <div className="w-full space-y-6 md:w-1/2">
             <h2 className="text-center text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
-              All your spending. Every card. Every bank account.
+              Guest accounts fully supported.
             </h2>
             <p className="text-lg leading-relaxed text-white/90 sm:text-xl">
-              Connect your credit cards and bank accounts from nearly all of the UK banks, building societies and credit cards so that magpie can track your spending automatically
+              Not everybody in your group has magpie.money? Not a problem, add expenses and share costs just as easily via provisional users. 
             </p>
           </div>
           <div className="w-full md:w-1/2">

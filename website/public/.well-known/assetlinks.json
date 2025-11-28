@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.helgolabs.magpie",
+      "sha256_cert_fingerprints": [
+        "3EF179AB9B40AE0B6E73E775F51550F1B4797FB9FBA3021A91E3FCAF0B9B5C28"
+      ]
+    }
+  }
+]

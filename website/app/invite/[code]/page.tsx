@@ -6,11 +6,11 @@ import { useParams } from 'next/navigation';
 export default function InvitePage() {
   const params = useParams();
   const inviteCode = params.code as string;
+  const playStoreLink = 'https://play.google.com/store/apps/details?id=com.helgolabs.magpie';
 
   useEffect(() => {
     // Try to open the app first
     const appDeepLink = `magpie://invite?code=${inviteCode}`;
-    const playStoreLink = `https://play.google.com/store/apps/details?id=com.helgolabs.magpie`;
 
     // Attempt to open the app
     window.location.href = appDeepLink;
@@ -21,7 +21,7 @@ export default function InvitePage() {
     }, 2000);
 
     return () => clearTimeout(timeout);
-  }, [inviteCode]);
+  }, [inviteCode, playStoreLink]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">

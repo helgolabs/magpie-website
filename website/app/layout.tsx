@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import TopBar from "./components/TopBar";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -53,6 +54,7 @@ export default function RootLayout({
         <TopBar />
         {children}
         <Analytics />
+        <GoogleAnalytics gaId="G-QVCQTC0TDV" />
       </body>
     </html>
   );

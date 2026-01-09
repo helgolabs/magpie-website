@@ -250,6 +250,83 @@ export default function Home() {
           </div>
         </div>
 
+        {/* How It Works Section */}
+        <div className="w-full max-w-6xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+            How it works
+          </h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl font-bold text-blue-600">
+                1
+              </div>
+              <div className="mb-3 text-5xl">🏦</div>
+              <h3 className="mb-2 text-xl font-bold text-white">Connect Your Bank</h3>
+              <p className="text-white/90">
+                Link your cards and accounts via secure open banking. Your transactions import automatically.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl font-bold text-blue-600">
+                2
+              </div>
+              <div className="mb-3 text-5xl">⚡</div>
+              <h3 className="mb-2 text-xl font-bold text-white">Split in 3 Taps</h3>
+              <p className="text-white/90">
+                See a transaction, tap it, choose who to split with. Done. Balance updated instantly.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl font-bold text-blue-600">
+                3
+              </div>
+              <div className="mb-3 text-5xl">💰</div>
+              <h3 className="mb-2 text-xl font-bold text-white">See Who Owes What</h3>
+              <p className="text-white/90">
+                Track balances in real-time. Everyone knows exactly what they owe. No awkward conversations.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 text-center">
+            <a
+              href="/how-it-works"
+              className="inline-block font-semibold text-yellow-400 transition-colors hover:text-yellow-300"
+            >
+              See detailed guide →
+            </a>
+          </div>
+        </div>
+
+        {/* Trust Badges Section */}
+        <div className="w-full max-w-5xl rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-sm">
+          <h2 className="mb-8 text-center text-2xl font-bold text-white sm:text-3xl">
+            Your money is safe with us
+          </h2>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 text-5xl">🔒</div>
+              <h3 className="mb-2 text-lg font-bold text-white">Bank-Grade Security</h3>
+              <p className="text-sm text-white/80">
+                End-to-end encryption and secure data storage. Your information is protected with the same security banks use.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 text-5xl">✓</div>
+              <h3 className="mb-2 text-lg font-bold text-white">GDPR Compliant</h3>
+              <p className="text-sm text-white/80">
+                Full compliance with UK and EU data protection regulations. Your privacy is our priority.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 text-5xl">🏛️</div>
+              <h3 className="mb-2 text-lg font-bold text-white">FCA Regulated</h3>
+              <p className="text-sm text-white/80">
+                Open banking regulated by the Financial Conduct Authority. We can only read transactions, never move money.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Footer Links */}
         <div className="mt-8 flex gap-6 text-sm text-white/60">
           <a href="/privacy" className="transition-colors hover:text-white">

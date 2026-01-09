@@ -4,8 +4,63 @@ import Image from "next/image";
 import { track } from "@vercel/analytics";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Magpie",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Android",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "name": "Free"
+      },
+      {
+        "@type": "Offer",
+        "price": "1.99",
+        "priceCurrency": "GBP",
+        "name": "Starter"
+      },
+      {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "GBP",
+        "name": "Premium"
+      },
+      {
+        "@type": "Offer",
+        "price": "3.99",
+        "priceCurrency": "GBP",
+        "name": "Ultimate"
+      }
+    ],
+    "description": "Connect your bank accounts and split expenses automatically. The only bill-splitting app with open banking integration. Perfect for flatmates, couples, and group travel.",
+    "url": "https://magpie.money",
+    "screenshot": "https://magpie.money/add-expense.png",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "ratingCount": "1"
+    },
+    "featureList": [
+      "Connect multiple bank accounts and credit cards",
+      "Automatic transaction import via open banking",
+      "Split bills in 3 taps",
+      "Guest accounts for non-users",
+      "Works offline",
+      "Multi-currency support",
+      "GDPR compliant"
+    ]
+  };
+
   return (
     <div className="min-h-screen overflow-x-hidden pt-16 font-sans" style={{ background: 'linear-gradient(to bottom, #0B5A9F 0%, #0F80E1 50%, #3A9AE8 100%)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <main className="flex w-full max-w-full flex-col items-center gap-16 overflow-x-hidden px-4 py-12 sm:px-6 sm:py-16 md:gap-24 md:py-20">
         {/* Hero Section with Image and Transaction Card Overlay */}
         <div className="relative w-full">

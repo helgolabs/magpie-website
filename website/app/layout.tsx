@@ -11,12 +11,32 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "magpie.money - Smart Personal Finance App",
-  description: "Take control of your financial future with magpie.money. Track expenses, manage budgets, and get personalized insights to improve your financial health.",
+  title: "magpie.money - Split Bills with Friends",
+  description: "Connect your bank accounts and split expenses automatically. The only bill-splitting app with open banking integration. Perfect for flatmates, couples, and group travel.",
   icons: {
     icon: "/magpie-no-background.png",
     apple: "/magpie-no-background.png",
   },
+  openGraph: {
+    title: "magpie.money - Split Bills with Friends",
+    description: "Connect your bank accounts and split expenses automatically.",
+    url: "https://magpie.money",
+    siteName: "magpie.money",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "magpie.money - Split Bills with Friends",
+    description: "Connect your bank accounts and split expenses automatically.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  metadataBase: new URL("https://magpie.money"),
 };
 
 export default function RootLayout({

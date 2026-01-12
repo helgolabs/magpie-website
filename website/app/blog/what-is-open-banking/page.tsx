@@ -257,19 +257,68 @@ export default function WhatIsOpenBanking() {
             <section>
               <h2 className="mb-4 text-2xl font-bold">How Magpie Uses Open Banking</h2>
               <p className="mb-4 leading-relaxed">
-                Magpie uses open banking to automatically import your transactions, so you don't
-                have to manually enter every expense. Here's what happens:
+                Magpie partners with{" "}
+                <a
+                  href="https://gocardless.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-blue-600 underline hover:text-blue-800"
+                >
+                  GoCardless
+                </a>
+                , a leading open banking provider, to automatically import your transactions.
+                GoCardless is FCA-authorized and trusted by thousands of businesses worldwide.
+                Here's what happens:
               </p>
               <ol className="ml-6 list-decimal space-y-2">
                 <li>You buy dinner for £45 on your connected credit card</li>
                 <li>Your bank processes the transaction</li>
-                <li>Via open banking, Magpie sees: "Restaurant ABC, £45, 8th Jan"</li>
+                <li>Via GoCardless's secure open banking connection, Magpie sees: "Restaurant ABC, £45, 8th Jan"</li>
                 <li>The transaction appears in your Magpie app</li>
                 <li>You tap it and split with your friends in 2 taps</li>
                 <li>Magpie updates balances instantly</li>
               </ol>
               <p className="mt-4 leading-relaxed">
                 No manual entry, no forgotten expenses, no spreadsheets. Just automatic tracking.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-bold">Why Magpie Uses GoCardless</h2>
+              <p className="mb-4 leading-relaxed">
+                Rather than building our own open banking infrastructure from scratch, we partnered
+                with GoCardless to ensure maximum security and reliability. GoCardless is:
+              </p>
+              <ul className="ml-6 list-disc space-y-3">
+                <li>
+                  <strong>FCA-authorized</strong> - Fully regulated as an Account Information Service
+                  Provider (AISP) by the UK's Financial Conduct Authority
+                </li>
+                <li>
+                  <strong>Battle-tested</strong> - Processes billions in transactions and serves
+                  thousands of businesses including major UK companies
+                </li>
+                <li>
+                  <strong>Security-first</strong> - Uses bank-grade encryption and follows the highest
+                  industry security standards
+                </li>
+                <li>
+                  <strong>Always up-to-date</strong> - Maintains connections with all UK banks and
+                  handles any technical changes automatically
+                </li>
+              </ul>
+              <p className="mt-4 leading-relaxed">
+                When you connect your bank to Magpie, you're protected by both GoCardless's security
+                infrastructure and your bank's security measures. Learn more about{" "}
+                <a
+                  href="https://gocardless.com/guides/posts/open-banking-security/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-blue-600 underline hover:text-blue-800"
+                >
+                  how GoCardless keeps your data safe
+                </a>
+                .
               </p>
             </section>
 

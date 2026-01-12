@@ -9,8 +9,9 @@ export default function Features() {
       icon: "🏦",
       title: "Open Banking Integration",
       description:
-        "Connect your bank accounts and credit cards securely via open banking. Magpie automatically imports your transactions so you never have to manually enter an expense again.",
+        "Connect your bank accounts and credit cards securely via open banking. Powered by GoCardless, Magpie automatically imports your transactions so you never have to manually enter an expense again.",
       benefits: [
+        "Powered by GoCardless",
         "Supports thousands of UK banks",
         "Bank-grade security & encryption",
         "FCA regulated",

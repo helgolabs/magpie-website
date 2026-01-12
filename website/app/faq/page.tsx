@@ -33,7 +33,7 @@ export default function FAQ() {
       questions: [
         {
           q: "What is open banking?",
-          a: "Open banking is a secure way to connect apps to your bank account. It's regulated by the FCA (Financial Conduct Authority) in the UK. When you connect via open banking, we can read your transactions but we never have access to move your money or see your banking credentials.",
+          a: "Open banking is a secure way to connect apps to your bank account. It's regulated by the FCA (Financial Conduct Authority) in the UK. Magpie uses GoCardless, a leading FCA-authorized open banking provider, to securely connect to your bank. When you connect via open banking, we can read your transactions but we never have access to move your money or see your banking credentials.",
         },
         {
           q: "Is open banking safe?",

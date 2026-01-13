@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { track } from "@vercel/analytics";
+import { PLAY_STORE_URL } from "../../lib/constants";
 
 export default function Flatmates() {
   return (
@@ -240,7 +241,7 @@ export default function Flatmates() {
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://play.google.com/store"
+              href={PLAY_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all hover:scale-105"

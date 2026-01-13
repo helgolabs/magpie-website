@@ -2,11 +2,12 @@
 
 import { useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import { PLAY_STORE_URL } from '../../lib/constants';
 
 export default function InvitePage() {
   const params = useParams();
   const inviteCode = params.code as string;
-  const playStoreLink = 'https://play.google.com/store/apps/details?id=com.helgolabs.magpie';
+  const playStoreLink = PLAY_STORE_URL;
 
   useEffect(() => {
     // Try to open the app first

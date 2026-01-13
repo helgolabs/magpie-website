@@ -5,6 +5,7 @@ import { track } from "@vercel/analytics";
 import Modal from "./Modal";
 import IOSModal from "./IOSModal";
 import DesktopModal from "./DesktopModal";
+import { PLAY_STORE_URL } from "../lib/constants";
 
 interface DownloadButtonProps {
   playStoreUrl?: string;
@@ -14,7 +15,7 @@ interface DownloadButtonProps {
 type Platform = "android" | "ios" | "desktop";
 
 export default function DownloadButton({
-  playStoreUrl = "https://play.google.com/store",
+  playStoreUrl = PLAY_STORE_URL,
   waitlistUrl = "#waitlist"
 }: DownloadButtonProps) {
   const [platform, setPlatform] = useState<Platform | null>(null);

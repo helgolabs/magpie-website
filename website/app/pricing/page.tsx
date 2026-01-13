@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { track } from "@vercel/analytics";
+import { PLAY_STORE_URL } from "../lib/constants";
 
 export default function Pricing() {
   const tiers = [
@@ -155,7 +156,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://play.google.com/store"
+                href="{PLAY_STORE_URL}"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`rounded-xl px-6 py-3 text-center font-semibold transition-all hover:scale-105 ${
@@ -316,7 +317,7 @@ export default function Pricing() {
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://play.google.com/store"
+              href="{PLAY_STORE_URL}"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all hover:scale-105"

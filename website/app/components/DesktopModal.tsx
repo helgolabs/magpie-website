@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { PLAY_STORE_URL } from "../lib/constants";
 
 interface DesktopModalProps {
   playStoreUrl?: string;
@@ -8,7 +9,7 @@ interface DesktopModalProps {
 }
 
 export default function DesktopModal({
-  playStoreUrl = "https://play.google.com/store",
+  playStoreUrl = PLAY_STORE_URL,
   waitlistUrl = "#waitlist"
 }: DesktopModalProps) {
   const [qrCodeUrl, setQrCodeUrl] = useState("");

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { track } from "@vercel/analytics";
+import { PLAY_STORE_URL } from "./lib/constants";
 
 export default function Home() {
   const jsonLd = {
@@ -123,7 +124,7 @@ export default function Home() {
         {/* CTA Buttons */}
         <div className="flex flex-col items-center gap-4 text-base font-medium sm:flex-row">
           <a
-            href="https://play.google.com/store"
+            href={PLAY_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="transition-all hover:scale-105"

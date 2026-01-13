@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { PLAY_STORE_URL } from "../lib/constants";
 
 export default function Blog() {
   const blogPosts = [
@@ -173,7 +174,7 @@ export default function Blog() {
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://play.google.com/store"
+              href="{PLAY_STORE_URL}"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all hover:scale-105"

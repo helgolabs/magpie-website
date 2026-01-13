@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { PLAY_STORE_URL } from "../lib/constants";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -215,7 +216,7 @@ export default function FAQ() {
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://play.google.com/store"
+              href={PLAY_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all hover:scale-105"

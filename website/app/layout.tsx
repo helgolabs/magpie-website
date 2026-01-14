@@ -15,9 +15,14 @@ export const metadata: Metadata = {
   title: "magpie.money - Split Bills with Friends",
   description: "Connect your bank accounts and split expenses automatically. The only bill-splitting app with open banking integration. Perfect for flatmates, couples, and group travel.",
   icons: {
-    icon: "/magpie-no-background.png",
-    apple: "/magpie-no-background.png",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "magpie.money - Split Bills with Friends",
     description: "Connect your bank accounts and split expenses automatically.",

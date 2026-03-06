@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { PLAY_STORE_URL } from '../../lib/constants';
 
-export default function UserInvitePage() {
+function UserInviteContent() {
   const searchParams = useSearchParams();
   const token = searchParams.get('token');
   const groupCode = searchParams.get('groupCode');
@@ -51,5 +51,17 @@ export default function UserInvitePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function UserInvitePage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+      </div>
+    }>
+      <UserInviteContent />
+    </Suspense>
   );
 }
